@@ -9,9 +9,9 @@ import java.util.*;
  * the BlueJ "shapes" example. 
  *
  * @author: Bruce Quig
- * @author: Michael Kšlling (mik)
+ * @author: Michael KÃ¶lling (mik)
  *
- * @version 2016.02.29
+ * @version 2016.02.29 modified by Colin Francis on 2022.09.11 (added more colors to setForegroundColor())
  */
 public class Canvas
 {
@@ -121,33 +121,50 @@ public class Canvas
      * @param  newColor   the new color for the foreground of the Canvas 
      */
     public void setForegroundColor(String colorString)
-    {
-        if(colorString.equals("red")) {
-            graphic.setColor(new Color(235, 25, 25));
-        }
-        else if(colorString.equals("black")) {
-            graphic.setColor(Color.black);
-        }
-        else if(colorString.equals("blue")) {
-            graphic.setColor(new Color(30, 75, 220));
-        }
-        else if(colorString.equals("yellow")) {
-            graphic.setColor(new Color(255, 230, 0));
-        }
-        else if(colorString.equals("green")) {
-            graphic.setColor(new Color(80, 160, 60));
-        }
-        else if(colorString.equals("magenta")) {
-            graphic.setColor(Color.magenta);
-        }
-        else if(colorString.equals("white")) {
-            graphic.setColor(Color.white);
-        }
-        else {
-            graphic.setColor(Color.black);
-        }
+{
+    if(colorString.equals("red")) {
+        graphic.setColor(new Color(235, 25, 25));
     }
-
+    else if(colorString.equals("orange")) {
+                graphic.setColor(new Color(255, 150, 0));
+    }
+    else if(colorString.equals("black")) {
+        graphic.setColor(Color.black);
+    }
+    else if(colorString.equals("blue")) {
+        graphic.setColor(new Color(30, 75, 220));
+    }
+    else if(colorString.equals("yellow")) {
+        graphic.setColor(new Color(255, 230, 0));
+    }
+    else if(colorString.equals("green")) {
+        graphic.setColor(new Color(80, 160, 60));
+    }
+    else if(colorString.equals("skyblue")) {
+        graphic.setColor(new Color(135, 206, 235));
+    }
+    else if(colorString.equals("darkgrey")) {
+        graphic.setColor(new Color(64, 64, 64));
+    }
+    else if(colorString.equals("grey")) {
+        graphic.setColor(new Color(128, 128, 128));
+    }
+    else if(colorString.equals("lightgrey")) {
+        graphic.setColor(new Color(192, 192, 192));
+    }
+    else if(colorString.equals("magenta")) {
+        graphic.setColor(Color.magenta);
+    }
+    else if(colorString.equals("pink")) {
+        graphic.setColor(new Color(255, 182, 193));
+    }
+    else if(colorString.equals("white")) {
+        graphic.setColor(Color.white);
+    }
+    else {
+        graphic.setColor(Color.black);
+    }
+}
     /**
      * Wait for a specified number of milliseconds before finishing.
      * This provides an easy way to specify a small delay which can be
