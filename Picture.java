@@ -8,11 +8,6 @@
 import java.util.Scanner;
 public class Picture
 {
-    private Square wall;
-    private Square window;
-    private Triangle roof;
-    private Circle sun;
-    
     private Triangle nose;
     private Triangle leftEar;
     private Triangle rightEar;
